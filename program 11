@@ -1,0 +1,16 @@
+n=int(input("Enter the total number of values to insert:"))
+dicti={}
+i=n
+while n>0:
+    print("Enter two complex numbers in the form a+bj:")
+    a=complex(input())
+    b=complex(input())
+    sum=a+b
+    print("The sum is:",sum)
+    if i>0:
+        dicti[i]=sum
+    i=i-1
+    n=n-1
+print(dicti)
+c=dict(sorted(dicti.items()))
+print(c)
